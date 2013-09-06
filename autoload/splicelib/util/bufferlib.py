@@ -10,7 +10,7 @@ class Buffer(object):
         for b in vim.buffers:
             if b.number == self.number:
                 self._buffer = b
-            break
+                break
         self.name = self._buffer.name
 
     def open(self, winnr=None):
